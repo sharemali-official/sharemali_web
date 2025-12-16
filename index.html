@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareMali - Web Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.svg" alt="ShareMali" class="logo">
+                <span class="brand-text">ShareMali</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#extensions">Extensions</a>
+                <a href="#pricing">Pricing</a>
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="dashboard.html" class="btn-primary">Get Dashboard</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Manage Your <span class="gradient-text">Discord Bot</span> Like a Pro</h1>
+                <p class="hero-subtitle">Advanced dashboard, real-time analytics, and complete control over your ShareMali extensions.</p>
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn-hero-primary">
+                        <i class="fas fa-rocket"></i> Launch Dashboard
+                    </a>
+                    <a href="#features" class="btn-hero-secondary">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>1,500+</h3>
+                        <p>Active Bots</p>
+                    </div>
+                    <div class="stat">
+                        <h3>12,000+</h3>
+                        <p>Extensions</p>
+                    </div>
+                    <div class="stat">
+                        <h3>45,000+</h3>
+                        <p>Users</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="dashboard-preview">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="preview-title">ShareMali Dashboard</span>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-sidebar">
+                            <div class="sidebar-item active">
+                                <i class="fas fa-home"></i>
+                                <span>Dashboard</span>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Extensions</span>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytics</span>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </div>
+                        </div>
+                        <div class="preview-main">
+                            <div class="metric-card">
+                                <h4>Active Users</h4>
+                                <h2>1,234</h2>
+                                <span class="trend up">+12%</span>
+                            </div>
+                            <div class="metric-card">
+                                <h4>Revenue</h4>
+                                <h2>$45.67</h2>
+                                <span class="trend up">+8%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to manage your Discord bot efficiently</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Monitor bot performance, user growth, and engagement metrics in real-time.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Extension Marketplace</h3>
+                    <p>Browse, install, and manage extensions from our growing marketplace.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Automation Tools</h3>
+                    <p>Automate routine tasks with our powerful automation system.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Security</h3>
+                    <p>Enterprise-grade security with encryption and access controls.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>API Access</h3>
+                    <p>Full REST API for custom integrations and automation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Access your dashboard from any device, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Elevate Your Bot Management?</h2>
+            <p>Join thousands of bot developers using ShareMali Dashboard</p>
+            <a href="login.html" class="btn-cta">
+                <i class="fas fa-rocket"></i> Start Free Trial
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ShareMali</h3>
+                    <p>Advanced Discord bot management platform for developers and communities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#">Features</a>
+                    <a href="#">Extensions</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">API Docs</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">Community</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Status</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShareMali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
