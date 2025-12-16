@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ShareMali</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/logo.svg" alt="ShareMali" class="logo">
+            <span class="brand-text">ShareMali</span>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="extensions.html" class="nav-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Extensions</span>
+                <span class="badge">12</span>
+            </a>
+            <a href="analytics.html" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+            <a href="api.html" class="nav-item">
+                <i class="fas fa-code"></i>
+                <span>API</span>
+            </a>
+            <a href="webhooks.html" class="nav-item">
+                <i class="fas fa-link"></i>
+                <span>Webhooks</span>
+            </a>
+            <a href="settings.html" class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=user" alt="User" class="avatar">
+                <div class="user-info">
+                    <span class="username">John Doe</span>
+                    <span class="user-status">Pro Plan</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search extensions, users, logs...">
+            </div>
+            <div class="top-bar-actions">
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </button>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-new-extension">
+                    <i class="fas fa-plus"></i> New Extension
+                </button>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-container">
+            <!-- Welcome Banner -->
+            <div class="welcome-banner">
+                <div class="welcome-content">
+                    <h1>Welcome back, John! 👋</h1>
+                    <p>Your bot is running smoothly. Here's what's happening today.</p>
+                </div>
+                <div class="welcome-stats">
+                    <div class="stat-card mini">
+                        <span class="stat-label">Active Users</span>
+                        <span class="stat-value">1,234</span>
+                        <span class="stat-change up">+12%</span>
+                    </div>
+                    <div class="stat-card mini">
+                        <span class="stat-label">Revenue</span>
+                        <span class="stat-value">$45.67</span>
+                        <span class="stat-change up">+8%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(88, 101, 242, 0.1);">
+                        <i class="fas fa-users" style="color: #5865F2;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Total Users</span>
+                        <span class="stat-value">12,456</span>
+                    </div>
+                    <div class="stat-trend up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+15%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(0, 255, 150, 0.1);">
+                        <i class="fas fa-puzzle-piece" style="color: #00ff96;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Extensions</span>
+                        <span class="stat-value">24</span>
+                    </div>
+                    <div class="stat-trend up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+3</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(255, 107, 107, 0.1);">
+                        <i class="fas fa-bolt" style="color: #ff6b6b;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Commands Used</span>
+                        <span class="stat-value">45.6K</span>
+                    </div>
+                    <div class="stat-trend up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+24%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(255, 209, 102, 0.1);">
+                        <i class="fas fa-clock" style="color: #ffd166;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Uptime</span>
+                        <span class="stat-value">99.9%</span>
+                    </div>
+                    <div class="stat-trend stable">
+                        <i class="fas fa-minus"></i>
+                        <span>Stable</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts and Extensions -->
+            <div class="content-grid">
+                <!-- Chart Section -->
+                <div class="chart-section">
+                    <div class="section-header">
+                        <h3>User Growth</h3>
+                        <select class="time-select">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>Last 90 days</option>
+                        </select>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Recent Extensions -->
+                <div class="extensions-section">
+                    <div class="section-header">
+                        <h3>Recent Extensions</h3>
+                        <a href="extensions.html" class="view-all">View All</a>
+                    </div>
+                    <div class="extensions-list">
+                        <div class="extension-card">
+                            <div class="extension-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="extension-info">
+                                <h4>Game System</h4>
+                                <p>Complete gaming system for Discord</p>
+                                <div class="extension-stats">
+                                    <span class="stat">
+                                        <i class="fas fa-download"></i> 1.2K
+                                    </span>
+                                    <span class="stat">
+                                        <i class="fas fa-star"></i> 4.8
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="extension-status active">Active</span>
+                        </div>
+
+                        <div class="extension-card">
+                            <div class="extension-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="extension-info">
+                                <h4>Music Player</h4>
+                                <p>High quality music streaming</p>
+                                <div class="extension-stats">
+                                    <span class="stat">
+                                        <i class="fas fa-download"></i> 2.4K
+                                    </span>
+                                    <span class="stat">
+                                        <i class="fas fa-star"></i> 4.9
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="extension-status active">Active</span>
+                        </div>
+
+                        <div class="extension-card">
+                            <div class="extension-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="extension-info">
+                                <h4>Moderation Pro</h4>
+                                <p>Advanced moderation tools</p>
+                                <div class="extension-stats">
+                                    <span class="stat">
+                                        <i class="fas fa-download"></i> 856
+                                    </span>
+                                    <span class="stat">
+                                        <i class="fas fa-star"></i> 4.7
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="extension-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="activity-section">
+                    <div class="section-header">
+                        <h3>Recent Activity</h3>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon success">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Game System</strong> extension updated</p>
+                                <span class="activity-time">2 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon warning">
+                                <i class="fas fa-exclamation"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>API rate limit warning</p>
+                                <span class="activity-time">1 hour ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon info">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>New user registration: <strong>@alex</strong></p>
+                                <span class="activity-time">3 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon success">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>Payment received: <strong>$9.99</strong></p>
+                                <span class="activity-time">5 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="actions-section">
+                    <div class="section-header">
+                        <h3>Quick Actions</h3>
+                    </div>
+                    <div class="actions-grid">
+                        <button class="action-btn" onclick="createExtension()">
+                            <i class="fas fa-plus"></i>
+                            <span>New Extension</span>
+                        </button>
+                        <button class="action-btn" onclick="openAPIKeys()">
+                            <i class="fas fa-key"></i>
+                            <span>API Keys</span>
+                        </button>
+                        <button class="action-btn" onclick="openWebhooks()">
+                            <i class="fas fa-link"></i>
+                            <span>Webhooks</span>
+                        </button>
+                        <button class="action-btn" onclick="openAnalytics()">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Analytics</span>
+                        </button>
+                        <button class="action-btn" onclick="openSettings()">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </button>
+                        <button class="action-btn" onclick="openDocs()">
+                            <i class="fas fa-book"></i>
+                            <span>Documentation</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
